@@ -29,25 +29,6 @@ function quickSort(arr, left, right) {
   }
 }
 
-// 简便版
-function quickSort(arr){
-  if (arr.length <= 1) {
-    return arr;
-  }
-  var base = arr.splice(~~(arr.length/2),1)[0];
-  var left = [];
-  var right = [];
-
-  while(arr.length){
-    if (arr[0] < base) {
-      left.push(arr.shift());
-    }else {
-      right.push(arr.shift());
-    }
-  }
-  return quickSort(left).concat(base,quickSort(right));
-}
-
 // 方法2
 function quickSort2(arr){
   if(arr.length <= 1){

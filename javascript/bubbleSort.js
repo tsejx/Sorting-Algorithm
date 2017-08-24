@@ -41,7 +41,8 @@ function bubbleSort2(arr) {
 function bubbleSort3(arr) {
   var low = 0;
   var high = arr.length - 1; //设置变量的初始值
-  var tmp, j;
+  var j;
+  // var tmp;
   while (low < high) {
     for (j = low; j < high; ++j) //正向冒泡,找到最大者
       if (arr[j] > arr[j + 1]) {
